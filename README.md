@@ -1,29 +1,38 @@
-# README #
+The project is written in TypeScript and aims to provide API endpoints for managing books.
 
-This README would normally document whatever steps are necessary to get your application up and running.
+## Installation
 
-### What is this repository for? ###
+1. Clone the repository:
+   git clone https://github.com/jaydeeptarsariya/bookstore-server.git
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+2. Navigate to the project directory:
+   cd bookstore-server
 
-### How do I get set up? ###
+3. Install the project dependencies:
+   npm install
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+## Usage
 
-### Contribution guidelines ###
+1. Start the server:
+   npm run ts-nodemon
 
-* Writing tests
-* Code review
-* Other guidelines
+2. The server will be accessible at `http://localhost:<PORT>` where `<PORT>` is the specified port (default is 8000).
 
-### Who do I talk to? ###
+## API Routes
 
-* Repo owner or admin
-* Other community or team contact
+- **GET `/`**: Homepage, possibly for testing server status.
+- **GET `/api/books`**: Retrieve a list of all books.
+- **POST `/api/books`**: Create a new book entry.
+- **GET `/api/books/:id`**: Retrieve a specific book by ID.
+- **PUT `/api/books/:id`**: Update a specific book by ID.
+- **DELETE `/api/books/:id`**: Delete a specific book by ID.
+
+## Database Schema
+
+The MySQL database `ng_books` contains a single table named `books` with the following columns:
+
+- `id` (INT): Auto-incremented primary key.
+- `title` (VARCHAR): Title of the book.
+- `description` (VARCHAR): Description of the book.
+- `image` (VARCHAR): URL or path to the book's image.
+- `created_at` (TIMESTAMP): Timestamp indicating when the book entry was created.
