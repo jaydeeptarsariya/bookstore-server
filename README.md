@@ -3,13 +3,22 @@ The project is written in TypeScript and aims to provide API endpoints for manag
 ## Installation
 
 1. Clone the repository:
+
+   ```bash
    git clone https://github.com/jaydeeptarsariya/bookstore-server.git
+    ```
 
 2. Navigate to the project directory:
+
+    ```bash
    cd bookstore-server
+    ```
 
 3. Install the project dependencies:
+
+    ```bash
    npm install
+    ```
 
 ## Usage
 
