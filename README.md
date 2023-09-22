@@ -23,7 +23,10 @@ The project is written in TypeScript and aims to provide API endpoints for manag
 ## Usage
 
 1. Start the server:
+
+    ```bash
    npm run ts-nodemon
+    ```
 
 2. The server will be accessible at `http://localhost:<PORT>` where `<PORT>` is the specified port (default is 8000).
 
